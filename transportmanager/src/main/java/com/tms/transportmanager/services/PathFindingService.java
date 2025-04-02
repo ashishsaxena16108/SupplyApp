@@ -56,7 +56,8 @@ public class PathFindingService {
 
             if (current.equals(end)) break;
 
-            for (Station neighbor : current.getNeighbors()) {
+            for (String neighborId : current.getNeighborIds()) {
+                Station neighbor = stationRepository.findById(neighborId).get();
                 double newDist = distances.get(current) + DistanceCalculator.calculateDistance(current.getLatitude(),current.getLongitude(),neighbor.getLatitude(),neighbor.getLongitude());
 
                 if (newDist < distances.get(neighbor)) {

@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -65,5 +66,18 @@ public class OwnStationService {
         orderRepository.save(order.get());
         return res;
     }
-
+    public String createAgent(User user,String stationId){
+        user.setStationId(stationId);
+        user.setRole(User.Role.DELIVERY_AGENT);
+        user.setDeliveries(new ArrayList<>());
+        Optional<Station> station = stationRepository.findById(stationId);
+        station.get().getDeliveryAgents().add(user);
+        userRepository.save(user);
+        stationRepository.save(station.get());
+        return "Agent Created Successfully";
+    }
+    public List<User> getAgents(String stationId){
+        Optional<Station> station = stationRepository.findById(stationId);
+        return station.get().getDeliveryAgents();
+    }
 }

@@ -1,13 +1,16 @@
 package com.tms.transportmanager.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
 import java.util.List;
 
-@Document
+@Document(collection = "stations")
 @Data
+@AllArgsConstructor
 public class Station {
     private String id;
     private String city;
@@ -15,9 +18,9 @@ public class Station {
     private Double latitude;
     private Double longitude;
     private String address;
-    private List<Order> orders;
     @DBRef
-    private List<User> DeliveryAgents;
+    private List<Order> orders = new ArrayList<>();
     @DBRef
-    private List<Station> neighbors;
+    private List<User> DeliveryAgents = new ArrayList<>();
+    private List<String> neighborIds = new ArrayList<>();
 }

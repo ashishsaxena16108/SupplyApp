@@ -21,7 +21,7 @@ public class User implements UserDetails {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
     private String warehouseId;
-    private Integer phoneNumber;
+    private Long phoneNumber;
     private Role role;
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

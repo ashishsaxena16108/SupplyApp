@@ -6,10 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,15 +17,15 @@ public class StationController {
    private StationService stationService;
 
    @PostMapping("/create")
-   public ResponseEntity<?> createStation(Station station){
+   public ResponseEntity<?> createStation(@RequestBody Station station){
        Station station1 = stationService.createStation(station);
        if(station==null)
           return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("Station not created");
        return ResponseEntity.status(HttpStatus.CREATED).body(station1);
    }
    @PostMapping("/create-all")
-   public ResponseEntity<?> createAllStation(List<Station> stations){
-       stations.forEach(stationService::createStation);
+   public ResponseEntity<?> createAllStation(@RequestBody List<Station> stations){
+       stationService.createAllStations(stations);
        return ResponseEntity.status(HttpStatus.CREATED).body("All stations created");
    }
 }

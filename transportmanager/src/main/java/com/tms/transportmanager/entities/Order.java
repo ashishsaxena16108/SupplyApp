@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Document(collection = "orders")
@@ -21,7 +22,7 @@ public class Order {
     private String customerAddress;
     private Double latitude;
     private Double longitude;
-    private List<OrderItem> items;
+    private List<OrderItem> items = new ArrayList<>();
     private double totalPrice;
     private Warehouse allocatedWarehouse;
     private List<Station> path;
