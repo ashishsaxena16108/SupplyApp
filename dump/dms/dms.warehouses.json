@@ -1,0 +1,41 @@
+[{
+  "_id": "W1",
+  "warehouseAddress": "Bhiwandi Industrial Area, Mumbai",
+  "latitude": 19.076,
+  "longitude": 72.8777,
+  "state": "Maharashtra",
+  "city": "Mumbai",
+  "country": "India",
+  "warehouseProducts": [],
+  "_class": "com.dms.supplymanager.entities.Warehouse"
+},
+{
+  "_id": "W2",
+  "latitude": 28.7041,
+  "longitude": 77.1025,
+  "state": "Delhi",
+  "city": "Delhi",
+  "country": "India",
+  "warehouseProducts": [],
+  "_class": "com.dms.supplymanager.entities.Warehouse"
+},
+{
+  "_id": "W3",
+  "latitude": 12.9716,
+  "longitude": 77.5946,
+  "state": "Karnataka",
+  "city": "Bengaluru",
+  "country": "India",
+  "warehouseProducts": [],
+  "_class": "com.dms.supplymanager.entities.Warehouse"
+},
+{
+  "_id": "W4",
+  "latitude": 17.385,
+  "longitude": 78.4867,
+  "state": "Telangana",
+  "city": "Hyderabad",
+  "country": "India",
+  "warehouseProducts": [],
+  "_class": "com.dms.supplymanager.entities.Warehouse"
+}]

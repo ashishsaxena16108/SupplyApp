@@ -1,0 +1,22 @@
+[{
+  "_id": "1",
+  "productName": "Essence Mascara Lash Princess",
+  "sku": "RCH45Q1A",
+  "price": 9.99,
+  "weight": 2,
+  "height": 14.43,
+  "width": 23.17,
+  "length": 28.01,
+  "_class": "com.dms.supplymanager.entities.Products"
+},
+{
+  "_id": "2",
+  "productName": "Eyeshadow Palette with Mirror",
+  "sku": "MVCFH27F",
+  "price": 19.99,
+  "weight": 3,
+  "height": 8.63,
+  "width": 12.42,
+  "length": 29.13,
+  "_class": "com.dms.supplymanager.entities.Products"
+}]

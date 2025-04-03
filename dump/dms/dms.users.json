@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "67ecf55038b56650acf656b1"
+  },
+  "name": "John Doe",
+  "email": "john43@gmail.com",
+  "password": "$2a$10$6oFXCNy0HN46LfxvLaoCsuAnhwv87fkqZABlDfrmCp0Jkc5itz51y",
+  "phoneNumber": {
+    "$numberLong": "9876543215"
+  },
+  "role": "ADMIN",
+  "_class": "com.dms.supplymanager.entities.User"
+}]

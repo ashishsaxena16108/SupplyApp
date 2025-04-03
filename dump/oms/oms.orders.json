@@ -1,0 +1,74 @@
+[{
+  "_id": {
+    "$oid": "67e10f79fa7fd96efa6ae281"
+  },
+  "customerId": "875",
+  "items": [
+    {
+      "sku": "RCH45Q1A",
+      "productName": "Essence Mascara Lash Princess",
+      "quantity": 1,
+      "price": 9.99,
+      "weight": 2,
+      "height": 14.43,
+      "width": 23.17,
+      "length": 28.01
+    }
+  ],
+  "totalPrice": 9.99,
+  "status": "PENDING",
+  "_class": "com.oms.ordermanager.entities.Order"
+},
+{
+  "_id": {
+    "$oid": "67e11105fa7fd96efa6ae282"
+  },
+  "customerId": "748",
+  "items": [
+    {
+      "sku": "MVCFH27F",
+      "productName": "Eyeshadow Palette with Mirror",
+      "quantity": 1,
+      "price": 19.99,
+      "weight": 3,
+      "height": 8.63,
+      "width": 12.42,
+      "length": 29.13
+    },
+    {
+      "sku": "RCH45Q1A",
+      "productName": "Essence Mascara Lash Princess",
+      "quantity": 1,
+      "price": 9.99,
+      "weight": 2,
+      "height": 14.43,
+      "width": 23.17,
+      "length": 28.01
+    }
+  ],
+  "totalPrice": 29.979999999999997,
+  "status": "PENDING",
+  "_class": "com.oms.ordermanager.entities.Order"
+},
+{
+  "_id": {
+    "$oid": "67e11afbacf6ee3333b4b6c0"
+  },
+  "customerId": "9587",
+  "customerAddress": "Pandav Nagar,New Delhi",
+  "items": [
+    {
+      "sku": "9EN8WLT2",
+      "productName": "Powder Canister",
+      "quantity": 1,
+      "price": 14.99,
+      "weight": 8,
+      "height": 10.7,
+      "width": 24.16,
+      "length": 11.07
+    }
+  ],
+  "totalPrice": 14.99,
+  "status": "PENDING",
+  "_class": "com.oms.ordermanager.entities.Order"
+}]

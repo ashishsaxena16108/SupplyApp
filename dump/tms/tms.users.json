@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "67ecf20d08b44127edcc0fd5"
+  },
+  "name": "Rahul Sharma",
+  "phoneNumber": {
+    "$numberLong": "8642575680"
+  },
+  "email": "rahulsharma34@gmail.com",
+  "stationId": "DS001",
+  "role": "DELIVERY_AGENT",
+  "deliveries": [],
+  "_class": "com.tms.transportmanager.entities.User"
+},
+{
+  "_id": {
+    "$oid": "67ecf28b08b44127edcc0fd6"
+  },
+  "name": "Vicky Sharma",
+  "phoneNumber": {
+    "$numberLong": "8642575680"
+  },
+  "email": "vickysharma34@gmail.com",
+  "stationId": "DS002",
+  "role": "DELIVERY_AGENT",
+  "deliveries": [],
+  "_class": "com.tms.transportmanager.entities.User"
+},
+{
+  "_id": {
+    "$oid": "67ecf2c508b44127edcc0fd7"
+  },
+  "name": "Vijay Sharma",
+  "phoneNumber": {
+    "$numberLong": "8642575656"
+  },
+  "email": "vijaysharma34@gmail.com",
+  "stationId": "DS003",
+  "role": "DELIVERY_AGENT",
+  "deliveries": [],
+  "_class": "com.tms.transportmanager.entities.User"
+},
+{
+  "_id": {
+    "$oid": "67ecf30808b44127edcc0fd8"
+  },
+  "name": "Raj Sharma",
+  "phoneNumber": {
+    "$numberLong": "8642585656"
+  },
+  "email": "rajsharma34@gmail.com",
+  "stationId": "DS004",
+  "role": "DELIVERY_AGENT",
+  "deliveries": [],
+  "_class": "com.tms.transportmanager.entities.User"
+}]

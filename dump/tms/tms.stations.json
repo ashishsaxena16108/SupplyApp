@@ -1,0 +1,35 @@
+[{
+  "_id": "DS012",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "latitude": 22.7196,
+  "longitude": 75.8577,
+  "address": "Amazon Fulfillment Center, Pithampur",
+  "DeliveryAgents": [],
+  "neighborIds": [
+    "DS011"
+  ],
+  "_class": "com.tms.transportmanager.entities.Station"
+},
+{
+  "_id": "DS011",
+  "city": "Chandigarh",
+  "state": "Punjab",
+  "latitude": 30.7333,
+  "longitude": 76.7794,
+  "address": "Amazon Warehouse, Industrial Area Phase 1",
+  "neighborIds": [
+    "DS012"
+  ],
+  "_class": "com.tms.transportmanager.entities.Station"
+},
+{
+  "_id": "DS017",
+  "city": "Coimbatore",
+  "state": "Tamil Nadu",
+  "latitude": 11.0168,
+  "longitude": 76.9558,
+  "address": "Amazon Hub, Peelamedu",
+  "neighborIds": [],
+  "_class": "com.tms.transportmanager.entities.Station"
+}]
